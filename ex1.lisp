@@ -1,0 +1,48 @@
+;; (write "Digite um valor")
+;; (terpri )
+;; ;;(PRINT "s\n")
+;; (setq b (read))
+;; (setq a 0)
+;; ;; (cond  
+;; ;;     ((> a 10)
+;; ;;         (write "s")
+;; ;;     )    
+;; ;; )
+;; ;; (when 
+;; ;;     (> a 12)
+;; ;;         (write 10) 
+;; ;; )
+;; ;; (if (> a 10)
+;; ;;     (write "andre")
+;; ;;     (write "tururu")
+;; ;; )
+;; (loop
+;;     (setq a (+ a 1))
+;;     (write a)
+;;     (when (> b 20) (return b))
+;; )
+
+
+(setq s 10)
+;; (if (= s 110)(write "s") 
+;; (write "nao")
+;; )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (setq a 0)
+;; (loop
+;;     (setq a (+ a 1))
+;;     (write a)
+;;     (terpri )
+;;     (cond ((= a s)
+;;         ( return s))
+;;     )
+;; )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq s 10)
+(defun re(s)
+    (dotimes (a (+ s 1))
+        (print a)
+    )
+)
+(setq e (read))
+(re e)
