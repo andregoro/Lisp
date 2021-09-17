@@ -222,3 +222,29 @@
 ;(write (gethash '001 empList))
 (terpri)
 ;(write (gethash '002 empList))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(write (setf (get 'books'title)'(Vou com a wind)))
+(terpri)
+(write (setf (get 'books 'author) '(Margaret Michel)))
+(terpri)
+
+(setf (get 'lista 'idade)43)
+(setf (get 'lista 'job)'killer)
+(write (symbol-plist 'lista))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq v1 (vector 1 2 3 4 5))
+(setq v2 #(a b c d e))
+(setq b 2)
+(setq a (make-array 5 :initial-element 0))
+(terpri)
+(write v1)
+(terpri)
+(write v2)
+(dotimes (i 5)
+    (setf (aref a (+ 1 b)) i)
+)
+
+(write a)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
